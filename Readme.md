@@ -1,6 +1,3 @@
-openai_ask.py is a very simple structure of calling openai API and interact with it.
-Please remember you need to get yourself an OPEN AI key a newsapi key to use the scripts.
-
 # News Summarizer Scripts
 
 This workspace contains Python scripts to fetch and summarize the latest news headlines from the United States using NewsAPI and OpenAI's GPT models.
@@ -8,21 +5,21 @@ This workspace contains Python scripts to fetch and summarize the latest news he
 ## Project Structure
 
 ```
-94_openai.py
-dailynewsusa_detailed.py
-dailynewsusa_simple.py
+openai_ask.py
+dailynews_usa_ai.py
+dailynews_usa_simple.py
 requirements.txt
 ```
 
 ## File Descriptions
 
-- **[dailynewsusa_simple.py](dailynewsusa_simple.py)**  
+- **[dailynewsusa_simple.py](dailynews_usa_simple.py)**  
   Fetches the top 5 news headlines from the US and prints their titles, sources, content, and links in a simple, colorized format.
 
-- **[dailynewsusa_detailed.py](dailynewsusa_detailed.py)**  
+- **[dailynewsusa_detailed.py](dailynews_usa_ai.py)**  
   Fetches the top 5 news headlines from the US, then uses OpenAI's GPT model to generate a brief summary for each article. The output includes the title, source, AI-generated summary, and a link to the full article.
 
-- **[94_openai.py](94_openai.py)**  
+- **[94_openai.py](openai_ask.py)**  
   Demonstrates how to use the OpenAI API to answer a simple question using the GPT model.
 
 - **[requirements.txt](requirements.txt)**  
@@ -44,17 +41,18 @@ requirements.txt
 
 - To fetch and print simple news headlines:
   ```sh
-  python dailynewsusa_simple.py
+  python dailynews_usa_simple.py
   ```
+  
 
 - To fetch news headlines and get AI-generated summaries:
   ```sh
-  python dailynewsusa_detailed.py
+  python dailynews_usa_ai.py
   ```
 
 - To test OpenAI GPT with a sample prompt:
   ```sh
-  python 94_openai.py
+  python openai_ask.py
   ```
 
 ## Notes
@@ -66,4 +64,5 @@ requirements.txt
 ---
 
 **Author:**  
+Diegiaz
 This project is for educational purposes and demonstrates basic integration with NewsAPI and OpenAI GPT
